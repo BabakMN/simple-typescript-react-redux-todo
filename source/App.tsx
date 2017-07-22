@@ -53,11 +53,11 @@ export default class App extends Component<IAppProps, any> {
                                 };
 
                                 if (list.selected) {
-                                    return <li className="active list">
+                                    return <li key={`list-${list.id}`} className="active list">
                                         <a href="#" onClick={onClick}>{ list.label }</a>
                                     </li>;
                                 } else {
-                                    return <li className="list">
+                                    return <li key={`list-${list.id}`} className="list">
                                         <a href="#" onClick={onClick}>{ list.label }</a>
                                     </li>;
                                 }

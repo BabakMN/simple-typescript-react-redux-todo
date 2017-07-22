@@ -21,7 +21,6 @@ module.exports = {
     output: {
         filename: "[name].js",
         path: ROOT,
-        //publicPath: "http://localhost:8080/build",
     },
     module: {
         rules: [
