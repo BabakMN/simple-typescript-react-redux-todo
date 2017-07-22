@@ -2,14 +2,10 @@ const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
-const rimraf = require("rimraf");
-
 const ROOT = path.resolve(
     __dirname,
     "build",
 );
-
-rimraf.sync(ROOT);
 
 module.exports = {
     entry: {
