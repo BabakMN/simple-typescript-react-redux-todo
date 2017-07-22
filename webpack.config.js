@@ -21,7 +21,7 @@ module.exports = {
     output: {
         filename: "[name].js",
         path: ROOT,
-        publicPath: "http://localhost:8080/build",
+        //publicPath: "http://localhost:8080/build",
     },
     module: {
         rules: [
@@ -55,7 +55,8 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: "source/index.ejs"
+            template: "source/index.ejs",
+            title: "Simple Todo",
         })
     ],
 };
